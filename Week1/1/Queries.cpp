@@ -18,7 +18,6 @@ int main()
         int *t;
         t = lower_bound(a , a+n, x);
         int count = t-a;
-        cout
     }
     cout<<endl;
     return 0;
