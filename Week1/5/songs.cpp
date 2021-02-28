@@ -7,20 +7,17 @@ int main ()
     int n,m,s1,s2,comp[10000000]={0};
     long long int minSum=0,maxSum=0;
     cin>>n>>m;
-    for (int i=0;i<n;i++)
-    {
+    for (int i=0;i<n;i++){
         cin>>s1>>s2;
         comp[i]=s1-s2;
         minSum+=s2;
         maxSum+=s1;
     }
-    if (maxSum<=m)
-    {
+    if (maxSum<=m){
         cout<<0<<endl;
         return 0;
     }
-    if (minSum>m)
-    {
+    if (minSum>m){
         cout<<-1<<endl;
         return 0;
     }
@@ -34,12 +31,18 @@ int main ()
     for (int i=0;i<n;i++)
     {
         newSum = newSum - comp[n-1-i];
-        if (newSum<m)
+        if (newSum<=m)
         {
             cout<<i+1<<endl;
             return 0;
         }
     }
+    // int i=0;
+    // while (newSum>=m)
+    // {
+    //     newSum -= comp[n-i];
+    //     i--;
+    // }
     cout<<-1<<endl;
     return 0;
 }
