@@ -45,6 +45,6 @@ int main (){
             h[0].first = INT_MAX;
         }
         heapify(h, 0, n);
-    }  
+    }
     return 0;
 }
