@@ -8,7 +8,8 @@ int n;
 li bit[N];
 int a [N] = {0};
  
- 
+
+
 li query(int x){
     li res = 0;
     for(; x > 0; x -= x & -x)
