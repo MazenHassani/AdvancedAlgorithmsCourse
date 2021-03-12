@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "iostream": "cpp",
-        "ostream": "cpp"
-    },
-    "cquery.cacheDirectory": "${workspaceFolder}/.vscode/cquery_cached_index/"
-}
